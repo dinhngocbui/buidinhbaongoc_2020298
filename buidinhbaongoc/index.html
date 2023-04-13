@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnameser Restaurant</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script>
+      function sayHello() {
+          alert('welcome to Do Son hand and foot spa');
+      }
+  </script>
+</head>
+
+<body>
+
+   <!-- <canvas width="800" height="600"></canvas>
+    <video autoplay></video>
+    <div id="takePhoto" onclick="takePhoto()">
+    <i class="fa fa-camera" aria-hidden="true"></i> 
+    </div>-->
+  <script src="js/main.js"></script>
+
+  <div class="container">
+
+    
+   
+   
+      
+    <div class="container">
+  
+      
+      <h3>Do Son Hand and Foot Spa</h3>
+
+      <button onclick="sayHello()">Say Hello</button>
+  
+     
+        
+  
+      </div>
+  
+  
+      <div class="container">
+        <button id="getUsers"><b>Staff</b></button>
+        <div id="output"></div>
+      
+      </div>
+  
+      <div class="container">
+        <h4>Menu options</h4>
+       
+        <h5>Look- Relax - Beautiful</h5>
+        <table>
+  
+          <tr>
+            <th>Treatment</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+  
+          <tr>
+            <td>Design </td>
+            <td>Flower, Simple Line, Star</td>
+            <td><input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="5" /></td>
+            <td>€5</td>
+          </tr>
+          <tr>
+            <td>Diamon</td>
+            <td>Luxury  </td>
+            <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="10" /></td>
+            <td>€10</td>
+          </tr>
+          <tr>
+            <td>Eyebrow</td>
+            <td>Wax and Tint</td>
+            <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="15" /></td>
+            <td>€15</td>
+          </tr>
+        </table><br>
+  
+        <table>
+          <h6>Main</h6>
+  
+          <tr>
+            <td>Luxury pedicure </td>
+            <td>Cut,Shape,Culticule,Hardskin,food massage, </td>
+            <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="20" /></td>
+            <td>€20</td>
+          </tr>
+          <tr>
+            <td>Luxury Manicure</td>
+            <td>Cut,Shape,Culticule,Hand massage</td>
+            <td><input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="25" /></td>
+            <td>€25</td>
+          </tr>
+          <tr>
+            <td>Charming Eyebrow</td>
+            <td>Wax, tint, extension</td>
+            <td><input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="30" /></td>
+            <td>€30</td>
+          </tr>
+        </table><br>
+  
+  
+        <table>
+          <h6>Hand</h6>
+  
+          <tr>
+            <td>File and Polish</td>
+            <td>Cut, shape, normal colors</td>
+            <td><input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="35" /></td>
+            <td>€35</td>
+          </tr>
+          <tr>
+            <td>Shellac</td>
+            <td>Cut, shape, CND polish</td>
+            <td><input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="40" /></td>
+            <td>€40</td>
+          </tr>
+          <tr>
+            <td>Manicure</td>
+            <td>Cut, Shape, Culticule</td>
+            <td><input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="45" /></td>
+            <td>€45</td>
+          </tr>
+        </table><br>
+  
+  
+        <table>
+          <h6>Toes</h6>
+  
+          <tr>
+            <td>File and Polish Toes </td>
+            <td>Cut, Shape, Normal Colors Polish                        </td>
+            <td><input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="50" /></td>
+            <td>€50</td>
+          </tr>
+          <tr>
+            <td>Shellac</td>
+            <td>Cut, Shape, CND polish</td>
+            <td><input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="55" /></td>
+            <td>€55</td>
+          </tr>
+          <tr>
+            <td>Foot massage </td>
+            <td>Vietnamese Massage</td>
+            <td><input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="60" /></td>
+            <td>€60</td>
+          </tr>
+          <tr>
+            <td class="total">&nbsp;</td>
+            <td class="total">&nbsp;</td>
+            <td class="total right"><strong>Total:</strong></td>
+            <td class="total"><strong>
+                <div id="ItemsTotal">€0</div>
+              </strong></td>
+          </tr>
+        </table><br>
+  
+  
+  
+  
+  
+  
+  
+        <script>
+          var total_items = 12;
+  
+          function CalculateItemsValue() {
+            var total = 0;
+  
+            for (let i = 1; i <= total_items; i++) {
+              itemID = document.getElementById("qnt_" + i);
+              total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+  
+            }
+            document.getElementById('ItemsTotal').innerHTML = "€" + total;
+          }
+  
+          document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+            item.addEventListener('keyup', CalculateItemsValue);
+          });
+  
+        </script>
+  
+  
+  
+  
+  
+  
+      </div>
+  
+  
+
+    <button onclick="sayHello()">Say Hello</button>
+    <script src="main.js"></script>
+</body>
+
+</html>

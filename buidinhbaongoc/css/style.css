@@ -1,0 +1,98 @@
+        /* Style all input fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+          }
+          
+          /* Style the submit button */
+          input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+          }
+          
+          /* Style the container for inputs */
+          .container {
+            background-color: #f1f1f1;
+            padding: 20px;
+          }
+          
+          /* The message box is shown when the user clicks on the password field */
+          #message {
+            display:none;
+            background: #f1f1f1;
+            color: #000;
+            position: relative;
+            padding: 20px;
+            margin-top: 10px;
+          }
+          
+          #message p {
+            padding: 10px 35px;
+            font-size: 18px;
+          }
+          
+          /* Add a green text color and a checkmark when the requirements are right */
+          .valid {
+            color: green;
+          }
+          
+          .valid:before {
+            position: relative;
+            left: -35px;
+            content: "✔";
+          }
+          
+          /* Add a red text color and an "x" when the requirements are wrong */
+          .invalid {
+            color: red;
+          }
+          
+          .invalid:before {
+            position: relative;
+            left: -35px;
+            content: "✖";
+          }
+       
+
+          
+        
+      table {
+        margin: 0 auto;
+        width: 780px;}
+      table#rates	{width: 380px;}
+      th, td {
+        border-radius: 3px;
+        color: rgb(4, 19, 10);
+        padding: 7px 10px 5px 10px;
+        min-width: 9em;
+        text-align: left;}
+      th {
+        background-color: #077c42;
+        font-weight: bold;
+        text-transform: uppercase;}
+      td {
+        background-color: #fff;}
+      table.sortable th:hover {
+        cursor: pointer;}
+      th.ascending, th.descending, table.sortable th:hover {
+        background-color: #00cccc;
+        color: #fff;}
+
+
+
+
+
+              
+        
+
+
+
+
+        .btn:hover {background: rgb(6, 153, 42);}
+
+        .calculate {color: rgb(221, 56, 14);}
